@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var a=document.createElement("div")
+       a.innerText="HTML";
+       a.addEventListener("click",html);
+       document.body.appendChild(a);
+       a.setAttribute("style","box-shadow:10px 10px 10px gray;")
+       function html(){
+        a.style.display="none";
+        var b=document.createElement("img")
+        b.src="./html.jpg"
+        document.body.appendChild(b);
+
+       }
+       var c=document.createElement("div")
+       c.innerText="CSS";
+       c.addEventListener("click",css);
+       document.body.appendChild(c);
+       c.setAttribute("style","box-shadow:10px 10px 10px gray;")
+       function css(){
+        c.style.display="none";
+        var d=document.createElement("img")
+        d.src="./css.png"
+        document.body.appendChild(d);
+
+       }
+       var g=document.createElement("div")
+       g.innerText="JavaScript";
+       g.addEventListener("click",js);
+       document.body.appendChild(g);
+       g.setAttribute("style","box-shadow:10px 10px 10px gray;")
+       function js(){
+        g.style.display="none";
+        var h=document.createElement("img")
+        h.src="./js.jpg"
+        document.body.appendChild(h);
+
+       }
+         
+    </script>
+       
+    
+</body>
+</html>
